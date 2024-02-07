@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.13)
+project(program1)
+set(CMAKE_CXX_STANDARD_REQUIRED 11)
+add_executable(client client.cpp handler.cpp reader.cpp)
+target_compile_options(client PRIVATE -lpthread)
